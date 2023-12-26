@@ -1,0 +1,140 @@
+/* GENERAL - START */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center-h{
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* GENERAL - END */
+
+/* COVER - START */
+/* COVER - END */
+
+/* HEADER - START */
+header{
+    position: fixed;
+    bottom: 0;
+    border-radius: 100% 100% 0% 0%;
+    background: linear-gradient(#FF5733, brown);
+    width: 100%;
+    padding: 2vh 0;
+    box-shadow: 0px -3px 2px 1px grey;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > li{
+    background-color: fuchsia;
+    display: inline-block;
+    padding: 1vh 0;
+    margin: 0 1vw;
+}
+/* HEADER - END */
+
+/* MAIN - START */
+section{
+    height: 100vh;
+}
+
+.home-container{
+    background-image: url("../resource/template-1/couple-illustration.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-container h1{
+    position: relative;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.home-container h4{
+    position: relative;
+    bottom: -70vh;
+    font-style: italic;
+    text-align: right;
+    padding-right: 20%;
+}
+
+.couple-container{
+    background-color: yellowgreen;
+    height: 200vh;
+}
+
+.couple-container .groom-container{
+    background-image: url("../resource/template-1/groom-side_compressed.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.couple-container .groom-container .groom-caption{
+    position: relative;
+    top: 50%;
+    text-align: right;
+    padding-right: 5vw;
+}
+
+.couple-container .bride-container{
+    background-image: url("../resource/template-1/bride-side-compressed.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.couple-container .bride-container .bride-caption{
+    position: relative;
+    top: 50%;
+    text-align: left;
+    padding-left: 5vw;
+}
+
+.wedding-container{
+    display: flex;
+    padding: 5vh 0;
+    flex-direction: column;
+}
+
+.wedding-container .event-container{
+    margin: 0 5vw;
+    padding: 2vh 3vw;
+    background-color: darkolivegreen;
+    display: flex;
+}
+
+.wedding-container .event-container .event-caption{
+    margin: 0 2vw;
+}
+/* MAIN - END */
+
+/* FOOTER - START */
+footer{
+    background-color: blue;
+}
+
+.footer-content{
+    height: 5vh;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.header-space{
+    height: 12vh;
+}
+/* FOOTER - END */

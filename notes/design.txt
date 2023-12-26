@@ -1,0 +1,29 @@
+Design 1 (YM)
+- Cover
+- Covid protocol
+- Opening words
+- Couple
+- Wedding date & location
+- Gallery
+- Wishes & Wedding Gift
+# Music
+# Normal scrolling with sections
+# Mobile friendly
+# Have animation
+
+Design 2 (Sam)
+- Loading page
+- Cover
+- Opening words with changing background photo
+- Couple (Groom)
+- Couple (Bride)
+- Countdown timer
+- Wedding date & location
+- Rsvp & Wishes
+- Wedding Gift
+- Gallery
+- Thank you
+# Music
+# Full photo in background 
+# Auto fit scroll, 1 section, 1 page 
+# Have animation

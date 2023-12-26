@@ -1,0 +1,242 @@
+/* GENERAL - START */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    color: #000000AB;
+    position: relative;
+}
+
+.center-h{
+    margin: 0 auto;
+    padding: 4vh 10vw;
+}
+
+.center-text{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* GENERAL - END */
+
+/* HEADER - START */
+
+header{
+    min-height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FDF7F2;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 2px -2px rgba(255,255,255,0.4);
+}
+
+#header{
+    padding: 2vh 10vw;
+}
+
+.logo-container{
+    display: inline-block;
+    height: 12vh;
+}
+
+.logo-container img{
+    width: auto;
+    height: 100%;
+}
+
+.nav-container{
+    display: inline-block;
+    align-items: center;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav > ul{
+    background-color: none;
+}
+
+ul > li {
+    display: inline-block;
+    padding: 0 0.65rem 0 0.5rem;
+    font-size: large;
+    border-right: solid 0.15rem coral;
+}
+
+ul > li:last-child{
+    border-right: none;
+}
+
+li > a:active{
+    border-bottom: 2px solid darkblue;
+}
+
+li > a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: coral;
+    transition: width .3s;
+}
+
+ li > a:hover::after {
+    width: 100%;
+}
+
+/* HEADER - END */
+
+/* MAIN - START */ 
+main{
+    margin-top: 16vh;
+}
+
+section{
+    padding-top: 12vh;
+    margin-top: -12vh;
+}
+
+
+.hero-container{
+    background-color:gainsboro;
+    height: auto;
+}
+
+.hero{
+    background-color: darksalmon;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
+.hero .hero-caption{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.8) 50% );
+    overflow: hidden;
+    width: 100%;
+    padding: 10vh 8vw 3vh 8vw;
+}
+.hero .hero-caption button{
+    margin: 0.5rem 0;
+    padding: 0.3rem 0.4rem;
+    font-size: medium;
+    border: 1px solid rgba(0,0,0,0.8);
+    border-radius: 6px;
+    background-color: orangered;
+    color: cornsilk;
+    font-weight: 400;
+}
+
+.hero .hero-caption button:hover{
+    background-color: crimson;
+    color: honeydew;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+
+.whyus-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgreen;
+}
+
+.whyus-container .why-us-items{
+    display: inline-block;
+    width: 20%;
+}
+
+.whyus-container .why-us-items img{
+    width: 100%;
+}
+
+.design-studio-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: lightgreen;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-color: lightskyblue;
+}
+
+.design-studio-container .design-items{
+    display: flex;
+    flex-flow: column;
+    width: 45%;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-studio-container .design-items img,
+.design-studio-container .design-items h3,
+.design-studio-container .design-items p{
+    border: 1px solid red;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    border: 1px solid green;
+
+}
+
+.testimonial-container .testimonial-items{
+    width: 30%;
+    /*padding: 9px;*/
+}
+/*
+.testimonial-container .testimonial-items:hover{
+    border: solid 1px blue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+*/
+.testimonial-container .testimonial-items img{
+    width: 100%;
+    border-radius: 50%;
+    height: 40vh;
+    object-fit: cover;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.5);
+}
+
+/* MAIN - END */ 
+
+/* FOOTER - START */ 
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+.footer-content{
+    background-color: none;
+}
+/* FOOTER - END */ 
