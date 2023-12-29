@@ -1,0 +1,11 @@
+Links:
+
+https://www.google.com/maps?saddr=760+West+Genesee+Street+Syracuse+NY+13204&daddr=314+Avery+Avenue+Syracuse+NY+13204
+
+https://www.google.com/maps?saddr=My+Location&daddr=760+West+Genesee+Street+Syracuse+NY+13204
+
+Current Location to Gereja Katedral
+https://www.google.com/maps?saddr=My+Location&daddr=Jakarta+Cathedral,+Jl.+Katedral+No.7B,+Pasar+Baru,+Sawah+Besar,+Central+Jakarta+City,+Jakarta+10710
+
+Current Location to Balai Kartini
+https://www.google.com/maps?saddr=My+Location&daddr=Balai+Kartini,+Jl.+Gatot+Subroto+No.6+Kav.+37,+RT.6%2FRW.3,+Kuningan,+East+Kuningan,+Setiabudi,+South+Jakarta+City,+Jakarta+12950

@@ -1,0 +1,2 @@
+- template-1 to restruture using empty space divs
+- mobile 1st approach
