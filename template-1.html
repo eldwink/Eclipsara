@@ -21,18 +21,25 @@
                 <li><a href="#couple">Couple</a></li>
                 <li><a href="#wedding">Wedding</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#wishes">Wishes</a></li>
+                <li><a href="#rsvp-wishes">Wishes</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home" class="home-container">
-            <h1>John & Jessie</h1>
-            <h4>
-                <span>“Love yesterday, today, and forever.”</span> <br>
-                <span>- Jeremiah 31:3</span>
-            </h4>
+            <div class="empty-space-h-50pct"></div>
+            <div class="empty-space-h-50pct">
+                <h2>The Wedding of</h2>
+                <div class="empty-space-h-2vh"</div>
+                <h1>John & Jessie</h1>
+                <div class="empty-space-h-4vh"</div></div>
+                <h4>
+                    <span>“Love yesterday, today, and forever.”</span> <br>
+                    <span>- Jeremiah 31:3</span>
+                </h4>
+            </div>
         </section>
+        <div class="empty-space-h-4vh"></div>
         <section id="couple" class="couple-container">
             <div class="groom-container">
                 <div class="groom-caption">
@@ -40,6 +47,7 @@
                     <p>First son of Mr. Jonah Hopkins & Mrs. Hailey Hopkins</p>
                 </div>
             </div>
+            <div class="couple-divider"></div> <!-- to be styled later with centered love sign and border -->
             <div class="bride-container">
                 <div class="bride-caption">
                     <h3>Jessica Jones</h3>
@@ -49,7 +57,7 @@
         </section>
         <section id="wedding" class="wedding-container">
             <div class="event-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.847947316253!2d106.81422383144869!3d-6.169307348403449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cef86e21ad%3A0x3ecfda74692fc79!2sJakarta%20Cathedral!5e0!3m2!1sen!2sid!4v1703627406906!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.847947316253!2d106.81422383144869!3d-6.169307348403449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cef86e21ad%3A0x3ecfda74692fc79!2sJakarta%20Cathedral!5e0!3m2!1sen!2sid!4v1703627406906!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="event-caption">
                     <h4>Holy Matrimony</h4>
                     <p>
@@ -65,7 +73,7 @@
                 </div>
             </div>
             <div class="event-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.222125526899!2d106.82282327499047!3d-6.234423893753775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e6e7965f99%3A0x7b9ffa3205d3c39a!2sBalai%20Kartini!5e0!3m2!1sen!2sid!4v1703627365070!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.222125526899!2d106.82282327499047!3d-6.234423893753775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e6e7965f99%3A0x7b9ffa3205d3c39a!2sBalai%20Kartini!5e0!3m2!1sen!2sid!4v1703627365070!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="event-caption">
                     <h4>Wedding Reception</h4>
                     <p>
@@ -82,7 +90,26 @@
             </div>
         </section>
         <section id="gallery" class="gallery-container"></section>
-        <section id="wishes" class="wishes-container"></section>
+        <section id="rsvp-wishes" class="rsvp-wishes-container">
+            <h3>Reservation & Wishes</h3>
+            <p>Please confirm your attendance and kindly write your wishes for our beloved couple</p>
+            <form id="rsvp-wishes-form" action="" method="post">
+                <fieldset>
+                    <input id="name" placeholder="Name" type="text" required>
+                    <textarea name="wishes" id="wishes" cols="30" rows="10"></textarea>
+                    <input type="radio" name="attendance" id="attendance-yes" value="yes" checked><label for="attendance-yes"> Yes, I'll attend</label>
+                    <input type="radio" name="attendance" id="attendance-no" value="no"><label for="attendance-no"> No, I can't attend</label>
+                    <select name="attd-number" id="attd-number">
+                        <option value="0">How many person will attend?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <button name="submit" id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-content">&copy; 2023 Eclipsara. All rights reserved. </div>

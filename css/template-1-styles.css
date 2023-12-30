@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(52, 52, 52);
 }
 
 .center-h{
@@ -122,8 +123,13 @@ nav > ul > li{
 /* HEADER - END */
 
 /* MAIN - START */
+main{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .home-container{
@@ -133,18 +139,16 @@ section{
     background-repeat: no-repeat;
 }
 
-.home-container h1{
+.home-container h1,.home-container h2{
     position: relative;
     text-align: center;
-    padding: 2vh 0;
 }
 
 .home-container h4{
     position: relative;
-    bottom: -70vh;
     font-style: italic;
-    text-align: right;
-    padding-right: 20vw;
+    text-align: center;
+    
 }
 
 .home-container h4 span:first-child{
@@ -158,9 +162,10 @@ section{
 
 .couple-container{
     background-color: yellowgreen;
-    height: 200vh;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
 }
-
 .couple-container .groom-container{
     background-image: url("../resource/template-1/groom-side_compressed.jpg");
     background-position: left;
@@ -191,32 +196,112 @@ section{
     padding-left: 5vw;
 }
 
+@media (min-width:320px)  {
+    .couple-container .groom-container{
+        width: 100%;
+        order: 1;
+    }
+
+    .couple-container .bride-container{
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media (min-width:1025px) {
+    .couple-container .groom-container{
+        width: 50%;
+        order: 1;
+    }
+
+    .couple-container .bride-container{
+        width: 50%;
+        order: 2;
+    }
+}
+
 .wedding-container{
     display: flex;
-    padding: 5vh 0;
-    flex-direction: column;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .wedding-container .event-container{
-    margin: 0 5vw;
-    padding: 2vh 3vw;
-    background-color: darkolivegreen;
-    display: flex;
+    background-color: wheat;
+    border: 1px solid blue;
+    margin: 0 1vw;
 }
 
 .wedding-container .event-container .event-caption{
-    margin: 0 2vw;
+    border: none;
 }
 
 .wedding-container .event-container .event-caption p{
     margin-bottom: 2vh;
 } 
 .wedding-container .event-container .event-caption a{
+    /*
     margin-right: 0.5vw;
     padding: 0.5vh 0.5vw 1vh;
-    background-color: burlywood;
     border-radius: 0 0 50% 50%;
+    */
+    background-color: burlywood;
+    padding: 1vh 1vw;
 }
+
+.wedding-container .event-container .event-caption a:hover{
+    background-color: chocolate;
+    color: beige;
+}
+
+@media (min-width:320px)  {
+    .wedding-container .event-container{
+        display: flex;
+        width: 100%;
+    }
+    
+    .wedding-container .event-container .event-caption a{
+        display: block;
+        margin-bottom: 1vh;
+        
+    }
+}
+
+@media (min-width:1025px) {
+    .wedding-container .event-container{
+        width: auto;
+        display: block;
+        padding: 3vh 2vw;
+    }
+    
+    .wedding-container .event-container .event-caption a{
+        display: inline-block;
+    }
+}
+
+/* Gallery to be develop */
+
+/*
+.rsvp-wishes-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.rsvp-wishes-container h3, .rsvp-wishes-container p, .rsvp-wishes-container form{
+    display: block;
+}
+*/
+.rsvp-wishes-container form fieldset input[type="text"], .rsvp-wishes-container form fieldset textarea, .rsvp-wishes-container form fieldset select, .rsvp-wishes-container form fieldset button{
+    display: block;
+    width: 100%;
+
+}
+
+.rsvp-wishes-container form fieldset input, .rsvp-wishes-container form fieldset textarea, .rsvp-wishes-container form fieldset select, .rsvp-wishes-container form fieldset button{
+    margin-bottom: 3vh;
+}
+
 /* MAIN - END */
 
 /* FOOTER - START */
