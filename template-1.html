@@ -27,12 +27,12 @@
     </header>
     <main>
         <section id="home" class="home-container">
-            <div class="empty-space-h-50pct"></div>
-            <div class="empty-space-h-50pct">
+            <div class="empty-space-h-50vh"></div>
+            <div class="empty-space-h-50vh">
                 <h2>The Wedding of</h2>
-                <div class="empty-space-h-2vh"</div>
+                <div class="empty-space-h-2vh"></div>
                 <h1>John & Jessie</h1>
-                <div class="empty-space-h-4vh"</div></div>
+                <div class="empty-space-h-4vh"></div>
                 <h4>
                     <span>“Love yesterday, today, and forever.”</span> <br>
                     <span>- Jeremiah 31:3</span>
@@ -47,7 +47,10 @@
                     <p>First son of Mr. Jonah Hopkins & Mrs. Hailey Hopkins</p>
                 </div>
             </div>
-            <div class="couple-divider"></div> <!-- to be styled later with centered love sign and border -->
+            <div class="couple-divider"> <!-- to be styled later with centered love sign and border -->
+                <div class="couple-divider-1"></div>
+                <div class="couple-divider-2"></div>
+            </div> 
             <div class="bride-container">
                 <div class="bride-caption">
                     <h3>Jessica Jones</h3>
@@ -56,6 +59,7 @@
             </div>
         </section>
         <section id="wedding" class="wedding-container">
+            <div class="empty-space-h-8vh"></div>
             <div class="event-container">
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.847947316253!2d106.81422383144869!3d-6.169307348403449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cef86e21ad%3A0x3ecfda74692fc79!2sJakarta%20Cathedral!5e0!3m2!1sen!2sid!4v1703627406906!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="event-caption">
@@ -89,17 +93,33 @@
                 </div>
             </div>
         </section>
-        <section id="gallery" class="gallery-container"></section>
+        <section id="gallery" class="gallery-container">
+            <div class="empty-space-h-4vh"></div>
+            <div class="gallery-inner-container">
+                <img src="" alt="gallery-1">
+                <img src="" alt="gallery-2">
+                <img src="" alt="gallery-3">
+                <img src="" alt="gallery-4">
+                <img src="" alt="gallery-5">
+                <img src="" alt="gallery-6">
+                <img src="" alt="gallery-7">
+                <img src="" alt="gallery-8">
+            </div>
+            <div class="empty-space-h-8vh"></div>
+        </section>
         <section id="rsvp-wishes" class="rsvp-wishes-container">
-            <h3>Reservation & Wishes</h3>
-            <p>Please confirm your attendance and kindly write your wishes for our beloved couple</p>
-            <form id="rsvp-wishes-form" action="" method="post">
-                <fieldset>
+            <div class="rsvp-wishes-inner-container">
+                <h3>Reservation & Wishes</h3>
+                <p>Please confirm your attendance and kindly write your wishes for our beloved couple</p>
+                <div class="empty-space-h-4vh"></div>
+                <form id="rsvp-wishes-form" action="" method="post">
                     <input id="name" placeholder="Name" type="text" required>
-                    <textarea name="wishes" id="wishes" cols="30" rows="10"></textarea>
-                    <input type="radio" name="attendance" id="attendance-yes" value="yes" checked><label for="attendance-yes"> Yes, I'll attend</label>
-                    <input type="radio" name="attendance" id="attendance-no" value="no"><label for="attendance-no"> No, I can't attend</label>
-                    <select name="attd-number" id="attd-number">
+                    <textarea name="wishes" id="wishes" placeholder="Your wishes" cols="30" rows="5"></textarea>
+                    <fieldset id="attendance-group">
+                        <input type="radio" name="attendance-group" id="attendance-yes" value="yes" checked><label for="attendance-yes"> Yes, I'll attend</label>
+                        <input type="radio" name="attendance-group" id="attendance-no" value="no"><label for="attendance-no"> No, I can't attend</label>
+                    </fieldset>
+                    <select name="attd-number" id="attd-number" >
                         <option value="0">How many person will attend?</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -107,8 +127,8 @@
                         <option value="4">4</option>
                     </select>
                     <button name="submit" id="submit">Submit</button>
-                </fieldset>
-            </form>
+                </form>
+            </div>
         </section>
     </main>
     <footer>

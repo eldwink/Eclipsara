@@ -51,22 +51,22 @@ a{
     border: 1px dashed black;
 }
 
-.empty-space-h-25pct{
-    height: 25%;
+.empty-space-h-25vh{
+    height: 25vh;
     width: 100%;
     border-radius: 5px;
     border: 1px dashed black;
 }
 
-.empty-space-h-50pct{
-    height: 50%;
+.empty-space-h-50vh{
+    height: 50vh;
     width: 100%;
     border-radius: 5px;
     border: 1px dashed black;
 }
 
-.empty-space-h-75pct{
-    height: 75%;
+.empty-space-h-75vh{
+    height: 75vh;
     width: 100%;
     border-radius: 5px;
     border: 1px dashed black;
@@ -106,6 +106,7 @@ header{
     width: 100%;
     padding: 2vh 0;
     box-shadow: 0px -3px 2px 1px grey;
+    z-index: 100;
 }
 
 nav{
@@ -172,13 +173,33 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    position: relative;
+    order: 1;
 }
 
 .couple-container .groom-container .groom-caption{
-    position: relative;
-    top: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     text-align: right;
     padding-right: 5vw;
+    background-color: aliceblue;
+}
+
+
+.couple-container .couple-divider{
+    order: 2;
+    display: flex;
+}
+
+.couple-container .couple-divider .couple-divider-1{
+    order: 1;
+    background-color: yellow;
+}
+
+.couple-container .couple-divider .couple-divider-2{
+    order: 2;
+    background-color: cornflowerblue;
 }
 
 .couple-container .bride-container{
@@ -187,36 +208,53 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    position: relative;
+    order: 3;
 }
 
 .couple-container .bride-container .bride-caption{
-    position: relative;
-    top: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     text-align: left;
     padding-left: 5vw;
+    background-color: aliceblue;
 }
 
 @media (min-width:320px)  {
     .couple-container .groom-container{
         width: 100%;
-        order: 1;
     }
 
     .couple-container .bride-container{
         width: 100%;
-        order: 2;
     }
 }
 
 @media (min-width:1025px) {
     .couple-container .groom-container{
-        width: 50%;
-        order: 1;
+        width: 49.75%;
+    }
+
+    .couple-container .couple-divider{
+        width: 0.5%;
+        flex-flow: row wrap;
+    }
+
+    .couple-container .couple-divider .couple-divider-1{
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,1) 50%);
+    }
+    
+    .couple-container .couple-divider .couple-divider-2{
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,1) 50%);
     }
 
     .couple-container .bride-container{
-        width: 50%;
-        order: 2;
+        width: 49.75%;
     }
 }
 
@@ -282,24 +320,51 @@ section{
 
 /* Gallery to be develop */
 
+.gallery-container .gallery-inner-container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    background-color: indigo;
+    justify-content: center;
+}
+.gallery-container .gallery-inner-container img{
+    margin: 1vh 0.5vw;
+    min-width: 20vw;
+    height: 45vh;
+    background-color: springgreen;
+    object-fit: cover;
+}
+
+
 /*
 .rsvp-wishes-container{
     display: flex;
     flex-flow: row wrap;
 }
 
-.rsvp-wishes-container h3, .rsvp-wishes-container p, .rsvp-wishes-container form{
-    display: block;
-}
 */
-.rsvp-wishes-container form fieldset input[type="text"], .rsvp-wishes-container form fieldset textarea, .rsvp-wishes-container form fieldset select, .rsvp-wishes-container form fieldset button{
+
+.rsvp-wishes-inner-container{
+    margin: 0 auto;
+    background-color: darkkhaki;
+}
+
+.rsvp-wishes-container form input[type="text"], .rsvp-wishes-container form textarea, .rsvp-wishes-container form fieldset, .rsvp-wishes-container form select, .rsvp-wishes-container form button{
     display: block;
     width: 100%;
-
+    margin-bottom: 3vh;
 }
 
-.rsvp-wishes-container form fieldset input, .rsvp-wishes-container form fieldset textarea, .rsvp-wishes-container form fieldset select, .rsvp-wishes-container form fieldset button{
-    margin-bottom: 3vh;
+@media (min-width:320px)  {
+    .rsvp-wishes-inner-container{
+        width: 100%;
+    }
+}
+
+@media (min-width:320px)  {
+    .rsvp-wishes-inner-container{
+        width: 90%;
+    }
 }
 
 /* MAIN - END */
