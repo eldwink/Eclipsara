@@ -284,6 +284,7 @@ section{
 .wedding-container .event-container .event-caption{
     order: 2;
     border: none;
+    padding-top: 1vh;
 }
 
 .wedding-container .event-container .event-caption p{
